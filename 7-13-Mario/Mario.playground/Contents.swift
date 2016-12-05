@@ -11,3 +11,28 @@
  */
 
 // Add your code below
+func levelCost(heights: [Int], maxJump: Int) -> Int {
+    var unfinishable : Int = -1
+    var energy : Int = 0
+    var jumpHeight : Int = 0
+    var previousElement : Int = 0
+    for distance in heights {
+        let difference : Int = distance - previousElement
+        if difference < 0 {
+            difference * -1
+        }
+        jumpHeight += difference * 2
+        if jumpHeight > maxJump {
+            break
+        }
+        previousElement = distance
+        if jumpHeight == 0 {
+            energy += 1
+        } else {
+            energy += jumpHeight
+        }
+    }
+    if jumpHeight > maxJump {
+        return unfinishable
+    }
+}
