@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../SpriteKit 2.playground">
+      location = "group:SpriteKit 2.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Intro-Object-Oriented-Programming-Playground-swift3/OOP.playground">
    </FileRef>
    <FileRef
       location = "group:../15_Structures 2.playground">
